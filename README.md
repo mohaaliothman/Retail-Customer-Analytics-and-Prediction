@@ -2,7 +2,7 @@
 
 ## 🌐 Live Dashboard
 
-👉 [View Interactive Power BI Dashboard]([PUT_YOUR_POWERBI_LINK_HERE](https://app.powerbi.com/links/HbbtespNEg?ctid=13e5772d-fae9-4291-8e92-3ee771b9ec38&pbi_source=linkShare))
+👉 [View Interactive Power BI Dashboard](https://app.powerbi.com/links/HbbtespNEg?ctid=13e5772d-fae9-4291-8e92-3ee771b9ec38&pbi_source=linkShare)
 
 ---
 
