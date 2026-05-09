@@ -1,7 +1,7 @@
 # Retail Customer Intelligence & Cancellation Risk Analytics
 
 ## 🌐 Interactive Dashboard
-👉 View Power BI Dashboard
+👉 [View Power BI Dashboard]("https://drive.google.com/drive/folders/16qwJRlQRE4lx2JG_ZxTfp0RyPTNqa4h9?usp=sharing")
 
 ---
 
@@ -61,8 +61,9 @@ Retail-Customer-Analytics-and-Prediction/
 ├── README.md
 └── requirements.txt
 ```
-
 ---
+
+👉 [For data not found, click here]("https://drive.google.com/drive/folders/16qwJRlQRE4lx2JG_ZxTfp0RyPTNqa4h9?usp=sharing")
 
 # 📊 Dashboard Pages
 
