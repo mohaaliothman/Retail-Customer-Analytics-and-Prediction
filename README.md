@@ -1,31 +1,37 @@
-# 📊 Retail Customer Analytics & Prediction
+# Retail Customer Intelligence & Cancellation Risk Analytics
 
-## 🌐 Live Dashboard
-
-👉 [View Interactive Power BI Dashboard](https://app.powerbi.com/links/HbbtespNEg?ctid=13e5772d-fae9-4291-8e92-3ee771b9ec38&pbi_source=linkShare)
-
----
-
-## 📌 Project Overview
-
-This project analyzes retail transaction data to uncover insights about sales performance, customer behavior, and business risks.
-It combines **Business Intelligence (Power BI)** with **Predictive Analytics (Python)** to support data-driven decision making.
+## 🌐 Interactive Dashboard
+👉 View Power BI Dashboard
 
 ---
 
-## 🎯 Objectives
+# 📌 Project Overview
 
-* Analyze historical sales performance
-* Identify top products and key markets
-* Understand customer behavior and segmentation
-* Detect patterns in cancellations
-* Build predictive models for business insights
+This project analyzes e-commerce retail transaction data to uncover customer behavior patterns, sales trends, cancellation risks, and business opportunities using Business Intelligence and Machine Learning techniques.
+
+The project combines:
+- Data Cleaning & Transformation (Excel)
+- Interactive Business Intelligence Dashboards (Power BI)
+- Predictive Analytics & Customer Segmentation (Python)
+
+The goal is to transform raw retail data into actionable business insights that support data-driven decision-making.
 
 ---
 
-## 🧱 Project Structure
+# 🎯 Project Objectives
 
-```
+- Analyze historical sales performance
+- Explore customer purchasing behavior
+- Identify high-value customer segments
+- Detect cancellation trends and business risks
+- Build predictive analytics models for cancellation risk
+- Support business decision-making through interactive dashboards
+
+---
+
+# 🧱 Project Structure
+
+```bash
 Retail-Customer-Analytics-and-Prediction/
 │
 ├── Dashboard/
@@ -33,132 +39,165 @@ Retail-Customer-Analytics-and-Prediction/
 │
 ├── Data/
 │   ├── raw_data.xlsx
-│   └── cleaned_data.xlsx
+│   ├── clean_orders.csv
+│   ├── cancelled_orders.csv
+│   ├── customer_segments.csv
+│   └── cancellation_predictions_real.csv
 │
 ├── Models/
-│   ├── model.ipynb
-│   └── results.csv
+│   ├── customer_segmentation.ipynb
+│   ├── cancellation_prediction.ipynb
+│   └── feature_importance.csv
 │
 ├── Images/
 │   ├── overview.png
-│   ├── customer.png
-│   ├── time.png
-│   ├── cancelled.png
-│   ├── geo.png
-│   └── insights.png
+│   ├── customer_analysis.png
+│   ├── time_analysis.png
+│   ├── cancellation_analysis.png
+│   ├── segmentation.png
+│   └── predictive_analytics.png
 │
+├── Executive_Summary.pdf
 ├── README.md
-└── report.pdf
+└── requirements.txt
 ```
 
 ---
 
-## 📊 Dashboard Pages
+# 📊 Dashboard Pages
 
-### 1. Overview
+## 1. Executive Overview
+- Total Revenue, Orders, and Customers
+- Revenue trends over time
+- Top-performing countries and products
+- Key business KPIs
 
-* Total Revenue, Orders, Customers
-* Sales trends over time
-* Top products and countries
+## 2. Customer Analysis
+- Top customers by revenue
+- Customer purchasing behavior
+- Customer segmentation analysis
+- Revenue contribution by segment
 
----
+## 3. Time & Sales Analysis
+- Monthly and daily sales trends
+- Peak purchasing hours
+- Weekday vs weekend performance
+- Seasonal purchasing behavior
 
-### 2. Customer Analysis
+## 4. Cancellation Analysis
+- Cancellation trends over time
+- Countries with highest cancellations
+- Products contributing to cancelled revenue
+- Cancellation risk distribution
 
-* Top customers by revenue
-* Most frequent customers
-* Customer segmentation
-
----
-
-### 3. Time Analysis
-
-* Sales trends by month
-* Peak sales hours (around 12 PM)
-* Weekday vs weekend performance
-
----
-
-### 4. Cancelled Orders Analysis
-
-* Cancellation trends over time
-* Countries with highest cancellations
-* Products driving cancellations
-
----
-
-### 5. Geographical Analysis
-
-* Revenue distribution across countries
-* Comparison with and without the UK
+## 5. Predictive Analytics
+- Cancellation risk prediction
+- Feature importance analysis
+- Risk-level classification
+- Machine learning insights
 
 ---
 
-### 6. Key Insights
+# 🤖 Machine Learning Models
 
-* Revenue reached **17.37M** with strong growth
-* The UK contributes the majority of revenue (~80%)
-* Sales peak around **12 PM**
-* Low-value customers drive most revenue
-* Cancellations increase in **December**
+## 1. Customer Segmentation
 
----
+Using:
+- RFM Analysis
+- K-Means Clustering
 
-## 🤖 Predictive Modeling (In Progress)
+Customer groups:
+- VIP Customers
+- Loyal Customers
+- Regular Customers
+- At-Risk Customers
+- Low-Value Customers
 
-This project will include machine learning models such as:
-
-* Customer segmentation (Clustering)
-* Sales prediction (Regression)
-* Customer behavior analysis
-
----
-
-## 🛠 Tools & Technologies
-
-* Power BI
-* Excel (Data Cleaning)
-* Python (Pandas, Scikit-learn)
-* DAX
+### Segmentation Performance
+- Silhouette Score: ~0.59
 
 ---
 
-## 📷 Dashboard Preview
+## 2. Cancellation Risk Prediction
 
+Using:
+- Random Forest Classification
+
+### Model Performance
+- Accuracy: ~71%
+- Balanced dataset using downsampling techniques
+- Feature engineering applied before training
+
+### Most Important Features
+- Month
+- Purchase Hour
+- Total Price
+- Order Quantity
+
+---
+
+# 📈 Key Business Insights
+
+- Revenue exceeded **17M**
+- The UK generated the majority of revenue and cancellations
+- Sales activity peaks around **12 PM**
+- Weekday sales outperform weekend sales
+- Cancellation activity increases significantly during December
+- A small group of VIP customers contributes a large share of revenue
+- Temporal and transactional patterns strongly influence cancellations
+
+---
+
+# 🛠 Tools & Technologies
+
+- Power BI
+- Microsoft Excel
+- Python
+- Pandas
+- Scikit-learn
+- DAX
+
+---
+
+# 📷 Dashboard Preview
+
+## Executive Overview
 ![Overview](Images/overview.png)
-![Customer](Images/customer.png)
-![Time](Images/time.png)
-![Cancelled](Images/cancelled.png)
-![Insights](Images/insights.png)
+
+## Customer Analysis
+![Customer Analysis](Images/customer_analysis.png)
+
+## Time Analysis
+![Time Analysis](Images/time_analysis.png)
+
+## Cancellation Analysis
+![Cancellation Analysis](Images/cancellation_analysis.png)
+
+## Predictive Analytics
+![Predictive Analytics](Images/predictive_analytics.png)
 
 ---
 
-## 📈 Key Insights
+# ⚠️ Limitations
 
-* Revenue is heavily concentrated in the UK market
-* Customer behavior varies across segments
-* Sales activity peaks at midday
-* A small number of products drive cancellations
-
----
-
-## ⚠️ Limitations
-
-* Dataset limited to historical transactions
-* No real-time data integration
-* Predictive models are under development
+- Dataset is limited to historical retail transactions
+- External economic and operational factors were not included
+- Predictive models cannot guarantee future outcomes
+- Customer behavior may evolve over time
 
 ---
 
-## 🚀 Future Work
+# 🚀 Future Improvements
 
-* Integrate machine learning models into Power BI
-* Add forecasting capabilities
-* Improve customer segmentation (RFM Analysis)
+- Integrate forecasting models
+- Deploy real-time analytics pipelines
+- Improve recommendation systems
+- Build advanced customer lifetime value models
+- Integrate machine learning directly into Power BI
 
 ---
 
-## 👤 Author
+# 👤 Author
 
-**Mohammad Ali Othman**
+**Mohammad Ali Othman**  
 Data Science Student | BI & Data Analytics Enthusiast
